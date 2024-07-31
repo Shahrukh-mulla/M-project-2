@@ -1,0 +1,263 @@
+:root {
+    --logo-font: "Delius Unicase";
+    --regular-font: "DM Sans", sans-serif;
+    --box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --border-radius: 1rem;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--regular-font);
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  main {
+    width: 100%;
+    position: relative;
+  }
+  
+  a:link,
+  a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* NAVBAR */
+  
+  main nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0.8rem 2rem;
+    background-color: #6f6af7;
+    color: #fff;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 4rem; */
+  }
+  
+  nav .logo {
+    font-family: var(--logo-font);
+    font-size: 2.5rem;
+  }
+  
+  nav .nav-links {
+    font-size: 1.2rem;
+  
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  input {
+    background: none;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .search {
+    background-color: #fff;
+    color: #9f9f9f;
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+  }
+  
+  .menu-icon {
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .menu-icon i {
+    font-size: 2rem;
+  }
+  
+  /* SECTION STYLE */
+  
+  section {
+    padding: 0.8rem 6rem;
+    margin-bottom: 5rem;
+  }
+  
+  /* HEADER STYLE */
+  
+  .header {
+    margin-top: 6rem;
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .header img {
+    width: 35%;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+  }
+  
+  .header textarea {
+    width: 65%;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background-color: #e5d8ff;
+    color: #6f7373;
+    border: none;
+    font-size: 1.4rem;
+  
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* FEATURES STYLE */
+  
+  .features {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  
+  .feat-box {
+    width: 25%;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: #929dff;
+    color: white;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .answer {
+    background-color: #734cf2;
+  }
+  .participate {
+    background-color: #d288ff;
+  }
+  .passed {
+    background-color: #000000;
+  }
+  
+  /* INFORMATION STYLE */
+  
+  .informations {
+    margin: 0.8rem 6rem;
+    height: 80vh;
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+  
+    background-color: #483eff;
+    border-radius: var(--border-radius);
+  }
+  
+  .info-titles {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: #fff;
+    font-size: 3rem;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: 20%;
+  }
+  
+  .active {
+    border: none;
+    background-color: #bce0f6;
+    color: #000;
+  }
+  
+  .info-panel {
+    width: 60%;
+    position: relative;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    font-size: 1.2rem;
+    padding: 4rem;
+  }
+  
+  .info-panel ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .next {
+    position: absolute;
+    border: 1px solid #000;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    bottom: 4rem;
+    right: 4rem;
+    border-radius: var(--border-radius);
+  }
+  
+  .help-icon {
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    right: 80px;
+    bottom: 50px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .help-icon img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* SOCIALS STYLE */
+  
+  .socials {
+    position: fixed;
+    top: 200px;
+    right: 10px;
+    background-color: transparent;
+  }
+  
+  .socials ul {
+    gap: 0.2rem;
+  }
+  
+  .socials ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: var(--border-radius);
+    padding: 0.2rem;
+  }
